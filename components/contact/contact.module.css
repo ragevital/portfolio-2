@@ -1,0 +1,70 @@
+
+
+.contact_section {
+   @apply w-full py-20 border-b-[1px] border-b-black
+}
+
+.contact_title {
+    @apply flex justify-center items-center text-center
+}
+.content {
+    @apply w-full
+}
+
+.contentIn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .contentCompo {
+    @apply w-full h-auto flex  items-end lg:flex-row justify-between
+  }
+
+  .contentright{
+    width: 100%;
+    width: 60%;
+    height: 100%;
+    padding-top: 10px;
+    background: linear-gradient(to right, #1e2024, #23272b);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 4px;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    gap: 6px;
+    padding-top: 2px;
+    padding-top: 5px;
+}
+
+.sucessmessage {
+    @apply py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-green-500 text-base tracking-wide animate-bounce
+}
+
+.failmessage {
+    @apply py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-orange-500 text-base tracking-wide animate-bounce
+}
+
+.name {
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.namebloc {
+    @appy w-full lgl:w-1/2 flex flex-col gap-4
+}
