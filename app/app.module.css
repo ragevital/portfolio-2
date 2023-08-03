@@ -1,0 +1,10 @@
+.App {
+    /* width: 100%;
+    height: auto;
+    background: #212428;
+    font-weight: lighter; */
+    @apply w-full h-auto bg-bodyColor text-lightText
+}
+.padding {
+    @apply max-w-screen-2xl mx-auto px-16
+}
