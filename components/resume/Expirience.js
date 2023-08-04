@@ -5,7 +5,9 @@ import ResumeCard from "./ResumeCard";
 
 const Experience = () => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.5 } }}
       className="py-12 font-titleFont flex gap-20"
     >
       <div>
@@ -48,7 +50,7 @@ const Experience = () => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

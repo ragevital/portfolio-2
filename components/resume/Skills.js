@@ -4,8 +4,9 @@ import { motion } from 'framer-motion';
 
 const Skills = () => {
   return (
-    <div
-      
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.5 } }}
       className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
     >
       <div className="w-full lgl:w-1/2">
@@ -146,7 +147,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
