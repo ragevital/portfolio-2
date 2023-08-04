@@ -1,12 +1,11 @@
 'use client'
+import StoreProvider from '@/components/StoreProvider'
 import Footer from '../components/footer/Footer'
 import FooterBottom from '../components/footer/FooterBottom'
 import NavBar from '../components/navBar/NavBar'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
-import { Provider } from 'react-redux';
-import store from '../store';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,16 +18,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <NavBar />
-      <Provider store={store}>
-      <div className='w-full h-auto bg-bodyColor text-lightText' >
-        <div className='max-w-screen-2xl mx-auto px-16'>
-        {children}
-        </div>
-      </div>
-      </Provider>
-      <Footer />
-      <FooterBottom />
+      <body className={inter.className}>
+        <StoreProvider>
+          <NavBar />
+          <div className='w-full h-auto bg-bodyColor text-lightText' >
+            <div className='max-w-screen-2xl mx-auto px-16'>
+              {children}
+            </div>
+          </div>
+          <Footer />
+          <FooterBottom />
+        </StoreProvider>
+      </body>
     </html>
   )
 }
